@@ -36,4 +36,14 @@ func main() {
 	fmt.Println(nome)
 
 	// A expressão do tipo T(v) converge o valor v para o tipo T
+
+	// Ponteiros
+	i, j := 42, 2701
+	p := &i
+	fmt.Println(*p)
+	*p = 21
+	fmt.Println(i)
+	p = &j
+	*p /= 37
+	fmt.Println(j)
 }
