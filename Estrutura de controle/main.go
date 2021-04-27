@@ -15,14 +15,6 @@ func elevado(x, y, lim float64) float64 {
 	return lim
 }
 
-func fib() func() int {
-	a, b := 0, 1
-	return func() int {
-		a, b = b, a+b
-		return a
-	}
-}
-
 func main() {
 	sum := 0
 	// a instrução inicial e pós-instrução são opcionais for ;i<10; {} ou ainda for i<10 {} == while
@@ -53,11 +45,6 @@ func main() {
 		fmt.Println("Boa tarde")
 	default:
 		fmt.Println("Boa noite")
-	}
-
-	f := fib()
-	for i := 0; i < 10; i++ {
-		fmt.Print(f())
 	}
 
 	// Defer adia a execusão da ação até o final da função
