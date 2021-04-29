@@ -30,4 +30,14 @@ func main() {
 	for i := 0; i < 10; i++ {
 		fmt.Println(f())
 	}
+
+	GFG := 0
+	// Um exemplo um pouco mais básico sobre closure
+	counter := func() int {
+		GFG += 1
+		return GFG
+	}
+
+	fmt.Println(counter())
+	fmt.Println(counter())
 }
