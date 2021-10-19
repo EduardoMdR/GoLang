@@ -31,11 +31,11 @@ func main() {
 		fmt.Println(f())
 	}
 
-	GFG := 0
+	somador := 0
 	// Um exemplo um pouco mais básico sobre closure
 	counter := func() int {
-		GFG += 1
-		return GFG
+		somador += 1
+		return somador
 	}
 
 	fmt.Println(counter())

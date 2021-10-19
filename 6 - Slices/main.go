@@ -16,7 +16,7 @@ func main() {
 	// Exemplo de Slice (s)
 	primes := [6]int{2, 3, 5, 7, 11, 13}
 	var primos []int = primes[1:4] // intervalo aberto (de 1 á 3)
-	fmt.Println(primos)
+	fmt.Println(primos)            // imprime 3, 5, 7
 
 	// Slice são como referências para matrizes
 	names := [4]string{ // poderia utilizar apenas []string
